@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * get_specifier - finds the format func
- * @s: the format string
- *
- * Return: the number of bytes printed
- */
 int (*get_specifier(char *s))(va_list ap, params_t *params)
 {
 	specifier_t specifiers[] = {
